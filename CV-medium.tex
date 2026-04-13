@@ -1,288 +1,288 @@
 
-%-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
+% %-------------------------
+% % Resume in Latex
+% % Author : Jake Gutierrez
+% % Based off of: https://github.com/sb2nov/resume
+% % License : MIT
+% %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+% \documentclass[letterpaper,11pt]{article}
 
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\usepackage{fontawesome5}
-\usepackage{multicol}
-\setlength{\multicolsep}{-3.0pt}
-\setlength{\columnsep}{-1pt}
-\input{glyphtounicode}
-
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
+% \usepackage{latexsym}
+% \usepackage[empty]{fullpage}
+% \usepackage{titlesec}
+% \usepackage{marvosym}
+% \usepackage[usenames,dvipsnames]{color}
+% \usepackage{verbatim}
+% \usepackage{enumitem}
+% \usepackage[hidelinks]{hyperref}
+% \usepackage{fancyhdr}
+% \usepackage[english]{babel}
+% \usepackage{tabularx}
+% \usepackage{fontawesome5}
+% \usepackage{multicol}
+% \setlength{\multicolsep}{-3.0pt}
+% \setlength{\columnsep}{-1pt}
+% \input{glyphtounicode}
 
 
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+% %----------FONT OPTIONS----------
+% % sans-serif
+% % \usepackage[sfdefault]{FiraSans}
+% % \usepackage[sfdefault]{roboto}
+% % \usepackage[sfdefault]{noto-sans}
+% % \usepackage[default]{sourcesanspro}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.6in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.19in}
-\addtolength{\topmargin}{-.7in}
-\addtolength{\textheight}{1.4in}
-
-\urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-6pt}\scshape\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-% Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
-
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\classesList}[4]{
-  \item{
-        {#1 #2 #3 #4 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \vspace{-6pt}
-    \item
-    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2}\\
-    \end{tabular*}\vspace{-10pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % serif
+% % \usepackage{CormorantGaramond}
+% % \usepackage{charter}
 
 
-\begin{document}
+% \pagestyle{fancy}
+% \fancyhf{} % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
 
-%----------HEADING----------
-\begin{center}
-    {\Huge \scshape S M A Nahian} \\ \vspace{1pt}
-    500 Memorial Drive, Cambridge, MA 02139, USA \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ +1 (857) 331-8436 ~ \href{mailto:nahian@mit.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{nahian@mit.edu}} ~ 
-    \href{https://www.linkedin.com/in/SMANahian/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/SMANahian}}  ~
-    \href{https://github.com/SMANahian}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/SMANahian}}
-    \vspace{-8pt}
-\end{center}
+% % Adjust margins
+% \addtolength{\oddsidemargin}{-0.6in}
+% \addtolength{\evensidemargin}{-0.5in}
+% \addtolength{\textwidth}{1.19in}
+% \addtolength{\topmargin}{-.7in}
+% \addtolength{\textheight}{1.4in}
 
-%-----------EDUCATION-----------
-\section{Education}
-    \resumeSubHeadingListStart
-        \resumeSubheading
-            {Massachusetts Institute of Technology}{August 2025 -- Present}
-            {Bachelor of Science}{Massachusetts, USA}
+% \urlstyle{same}
 
-    % \vspace{3mm}    
-    \textit{Relevant Courses:} Distributed Computer Systems Engineering, Randomized Algorithms, Computation Structures, Fundamentals of Programming, Intro to Programming in C \& Assembly
-  
-    \resumeSubHeadingListEnd
-%-----------INVOLVEMENT---------------
-\section{Achievements}
-\begin{itemize}[leftmargin=0in, label={}]
-    \small{\item{
-        \textbf{Mathematical Olympiads}{: William Lowell Putnam Mathematical Competition Top 250 (2025); International Mathematical Olympiad Bronze Medal (2023, 2024) and Honorable Mention (2022); Asia Pacific Mathematics Olympiad Silver Medal (2022, 2023) and Bronze Medal (2024)
-        } \\
-        \vspace{2mm}
-        \textbf{Competitive Programming}{: Asia Pacific Informatics Olympiad Finalist (2024); ICPC Asia Dhaka Regional 6th Position as a guest high school team (2023); Bangladesh Olympiad in Informatics Bronze Medal (2023, 2024); Master rank at CodeForces} \\
-        \vspace{2mm}
-        \textbf{Chess}{: Arena FIDE Master (AFM) at International Chess Federation---FIDE}
-    }}
-\end{itemize}
+% \raggedbottom
+% \raggedright
+% \setlength{\tabcolsep}{0in}
 
-%-----------SKILLS-----------
-\section{Skills}
-\begin{itemize}[leftmargin=0in, label={}]
-    \small{\item{
-        \textbf{Programming/Scripting Languages}{: Python, C++, C, Rust, JavaScript, PHP, Java} \\
-        \textbf{Technologies/Frameworks}{: Linux, GitHub, Flask, Verus, MongoDB} \\
-    }}
-\end{itemize}
+% % Sections formatting
+% \titleformat{\section}{
+%   \vspace{-6pt}\scshape\raggedright\large\bfseries
+% }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
+% % Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
 
-%-----------EXPERIENCE-----------
-\section{Experience}
-    \resumeSubHeadingListStart
-        \resumeSubheading
-            {Cybersecurity at MIT Sloan (CAMS)}{September 2025 -- Present}
-            {Undergraduate Research Assistant}{Massachusetts, USA}
-            \resumeItemListStart
-                \resumeItem{Developing graph-based models to analyze and minimize risk propagation in AI supply chains.}
-                \resumeItem{Designing optimization methods to identify the most critical components to harden, sign, or verify for maximum security impact.}
-            \resumeItemListEnd
-            
-        \resumeSubheading
-            {Beneficial AI Foundation}{September 2025 -- Present}
-            {Undergraduate Research Assistant}{Massachusetts, USA}
-            \resumeItemListStart
-                \resumeItem{Developing AI tools to accelerate and automate formal verification workflows.}
-                \resumeItem{Contributing to Dalek-Lite, a Rust-based fork of dalek-cryptography/curve25519-dalek, aimed at the formal verification of elliptic-curve cryptography using Verus. GitHub: \texttt{\href{https://github.com/Beneficial-AI-Foundation/dalek-lite}{Beneficial-AI-Foundation/dalek-lite}}}
-            \resumeItemListEnd
-            
-        \resumeSubheading
-            {UC Irvine}{October 2023 -- August 2025}
-            {Research Collaborator --- Graph Theory (Internship)}{Irvine, California, USA \textit{(Remote)}}
-            \resumeItemListStart
-                \resumeItem{Conducted research under Prof. Wayne Hayes on graph theory, network analysis, and algorithm design.}
-                \resumeItem{Contributed to BLANT, a tool for computational network research; improved sampling and performance.}
-            \resumeItemListEnd
+% %-------------------------
+% % Custom commands
+% \newcommand{\resumeItem}[1]{
+%   \item{
+%     {#1 \vspace{-2pt}}
+%   }
+% }
 
-        \resumeSubheading
-            {Gonitzoggo}{August 2023 -- July 2025}
-            {Engineering Team Member}{Bangladesh}
-            \resumeItemListStart
-                \resumeItem{Identified a major security flaw and was recruited as a developer after reporting it.}
-                \resumeItem{Built key features and redesigned contest UI and logic for version 3, improving usability.}
-            \resumeItemListEnd
-  \resumeSubHeadingListEnd
+% \newcommand{\classesList}[4]{
+%   \item{
+%         {#1 #2 #3 #4 \vspace{-2pt}}
+%   }
+% }
+
+% \newcommand{\resumeSubheading}[4]{
+%   \vspace{-2pt}\item
+%     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%       \textbf{#1} & \textbf{\small #2} \\
+%       \textit{\small#3} & \textit{\small #4} \\
+%     \end{tabular*}\vspace{-7pt}
+% }
+
+% \newcommand{\resumeSubSubheading}[2]{
+%     \item
+%     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+%       \textit{\small#1} & \textit{\small #2} \\
+%     \end{tabular*}\vspace{-7pt}
+% }
+
+% \newcommand{\resumeProjectHeading}[2]{
+%     \vspace{-6pt}
+%     \item
+%     \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+%       \small#1 & \textbf{\small #2}\\
+%     \end{tabular*}\vspace{-10pt}
+% }
+
+% \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+% \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+% \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+% \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+% \newcommand{\resumeItemListStart}{\begin{itemize}}
+% \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% %-------------------------------------------
+% %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+% \begin{document}
 
-% ------------Research Publications--------------
-\section{Research Publications}
-\begin{itemize}[leftmargin=0.15in, label={$\vcenter{\hbox{\tiny$\bullet$}}$}]
-    \small
-    \item \textbf{S M A Nahian}, Joel Rarang, Wayne B. Hayes. ``Sampling Methods for Graphlet Estimation.'' \textit{PLOS ONE} (Under Review).
-    \item Wayne B. Hayes, Kimia Yazdani, \textbf{S M A Nahian}, Ezra Alemu. ``The Unseen Connections: Link Prediction via Pattern Matching in Large Networks.'' \textit{Cell Press Patterns} (Under Review). \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5579862}{[SSRN]}
-\end{itemize}
+% %----------HEADING----------
+% \begin{center}
+%     {\Huge \scshape S M A Nahian} \\ \vspace{1pt}
+%     500 Memorial Drive, Cambridge, MA 02139, USA \\ \vspace{1pt}
+%     \small \raisebox{-0.1\height}\faPhone\ +1 (857) 331-8436 ~ \href{mailto:nahian@mit.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{nahian@mit.edu}} ~
+%     \href{https://www.linkedin.com/in/SMANahian/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/SMANahian}}  ~
+%     \href{https://github.com/SMANahian}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/SMANahian}}
+%     \vspace{-8pt}
+% \end{center}
 
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-        \resumeProjectHeading
-            {\textbf{BeatVote} $|$ \emph{Python, Flask, MongoDB, Chrome Extension}}{September 2025}
-            \resumeItemListStart
-                \resumeItem{Built a collaborative karaoke and party music room platform at HackMIT 2025 in a team of four.}
-                \resumeItem{Engineered a Flask + MongoDB stack with secure login, guest access, and real-time queue updates.}
-            \resumeItemListEnd
-        \vspace{-4mm}
-        \resumeProjectHeading
-            {\textbf{Chess Analyzer} $|$ \emph{Python, Chess}}{June 2025}
-            \resumeItemListStart
-                \resumeItem{Built a tool that analyzes a player's games to detect recurring opening mistakes and generates targeted training positions for practice.}
-            \resumeItemListEnd
-        \vspace{-4mm}
-        \resumeProjectHeading
-            {\textbf{ssehC --- Chess Engine} $|$ \emph{C}}{September 2024}
-            \resumeItemListStart
-                \resumeItem{Created a chess engine from scratch implementing minimax search with alpha-beta pruning; deployed as a Lichess bot achieving 2000+ rating.}
-            \resumeItemListEnd
-        \vspace{-4mm}
-        \resumeProjectHeading
-            {\textbf{Spotify Addon --- Synced Lyrics} $|$ \emph{Java}}{February 2024}
-            \resumeItemListStart
-                \resumeItem{Extended an open-source Spotify lyrics widget with multilingual support via lrclib.net API; PR merged by original author.}
-            \resumeItemListEnd
-        \vspace{-4mm}
-        \resumeProjectHeading
-            {\textbf{CP Calendar} $|$ \emph{Python, Flask}}{February 2022}
-            \resumeItemListStart
-                \resumeItem{Created a customizable online calendar that aggregates competitive programming contests from 120+ online judges, with filtering and .ics sync.}
-            \resumeItemListEnd
-    \resumeSubHeadingListEnd
+% %-----------EDUCATION-----------
+% \section{Education}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading
+%             {Massachusetts Institute of Technology}{August 2025 -- Present}
+%             {Bachelor of Science}{Massachusetts, USA}
+
+%     % \vspace{3mm}
+%     \textit{Relevant Courses:} Distributed Computer Systems Engineering, Randomized Algorithms, Computation Structures, Fundamentals of Programming, Intro to Programming in C \& Assembly
+
+%     \resumeSubHeadingListEnd
+% %-----------INVOLVEMENT---------------
+% \section{Achievements}
+% \begin{itemize}[leftmargin=0in, label={}]
+%     \small{\item{
+%         \textbf{Mathematical Olympiads}{: William Lowell Putnam Mathematical Competition Top 250 (2025); International Mathematical Olympiad Bronze Medal (2023, 2024) and Honorable Mention (2022); Asia Pacific Mathematics Olympiad Silver Medal (2022, 2023) and Bronze Medal (2024)
+%         } \\
+%         \vspace{2mm}
+%         \textbf{Competitive Programming}{: Asia Pacific Informatics Olympiad Finalist (2024); ICPC Asia Dhaka Regional 6th Position as a guest high school team (2023); Bangladesh Olympiad in Informatics Bronze Medal (2023, 2024); Master rank at CodeForces} \\
+%         \vspace{2mm}
+%         \textbf{Chess}{: Arena FIDE Master (AFM) at International Chess Federation---FIDE}
+%     }}
+% \end{itemize}
+
+% %-----------SKILLS-----------
+% \section{Skills}
+% \begin{itemize}[leftmargin=0in, label={}]
+%     \small{\item{
+%         \textbf{Programming/Scripting Languages}{: Python, C++, C, Rust, JavaScript, PHP, Java} \\
+%         \textbf{Technologies/Frameworks}{: Linux, GitHub, Flask, Verus, MongoDB} \\
+%     }}
+% \end{itemize}
 
 
-% -----------Extracurricular Activities (Academic/Olympiad)-----------
-\section{Teaching \& Mentorship}
-    \resumeSubHeadingListStart
-        \resumeSubheading
-            {Problem Setter, Academic Team Member \& Mentor}{February 2022 -- November 2025}
-            {Bangladesh Mathematical Olympiad (BdMO)}{Bangladesh}
-            \resumeItemListStart
-                \resumeItem{Volunteer mentor for national and junior math Olympiad camps; conducted advanced math classes and discussion sessions.}
-            \resumeItemListEnd
+% %-----------EXPERIENCE-----------
+% \section{Experience}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading
+%             {Cybersecurity at MIT Sloan (CAMS)}{September 2025 -- Present}
+%             {Undergraduate Research Assistant}{Massachusetts, USA}
+%             \resumeItemListStart
+%                 \resumeItem{Developing graph-based models to analyze and minimize risk propagation in AI supply chains.}
+%                 \resumeItem{Designing optimization methods to identify the most critical components to harden, sign, or verify for maximum security impact.}
+%             \resumeItemListEnd
 
-        \resumeSubheading
-            {Problem Setter, Academic Team Member \& Mentor}{March 2022 -- May 2025}
-            {Gonitkonya --- Bangladesh Girls' Mathematics Foundation}{Bangladesh}
-            \resumeItemListStart
-                \resumeItem{Taught and mentored female Olympiad participants in national and EGMO-focused camps; trained the Bangladesh team for EGMO in 2022, 2023, and 2024.}
-            \resumeItemListEnd
+%         \resumeSubheading
+%             {Beneficial AI Foundation}{September 2025 -- Present}
+%             {Undergraduate Research Assistant}{Massachusetts, USA}
+%             \resumeItemListStart
+%                 \resumeItem{Developing AI tools to accelerate and automate formal verification workflows.}
+%                 \resumeItem{Contributing to Dalek-Lite, a Rust-based fork of dalek-cryptography/curve25519-dalek, aimed at the formal verification of elliptic-curve cryptography using Verus. GitHub: \texttt{\href{https://github.com/Beneficial-AI-Foundation/dalek-lite}{Beneficial-AI-Foundation/dalek-lite}}}
+%             \resumeItemListEnd
 
-        \resumeSubheading
-            {Founder}{August 2024 -- August 2025}
-            {NEMOP --- Year Long Online Mathematics Training Program}{Bangladesh}
-            \resumeItemListStart
-                \resumeItem{Founded NEMOP, inspired by India's OMC, to train top Bangladeshi students for the International Mathematical Olympiad (IMO).}
-            \resumeItemListEnd
+%         \resumeSubheading
+%             {UC Irvine}{October 2023 -- August 2025}
+%             {Research Collaborator --- Graph Theory (Internship)}{Irvine, California, USA \textit{(Remote)}}
+%             \resumeItemListStart
+%                 \resumeItem{Conducted research under Prof. Wayne Hayes on graph theory, network analysis, and algorithm design.}
+%                 \resumeItem{Contributed to BLANT, a tool for computational network research; improved sampling and performance.}
+%             \resumeItemListEnd
 
-        \resumeSubheading
-            {Co-Founder \& Mentor}{September 2024 -- March 2025}
-            {Thonk \& Code}{Bangladesh}
-            \resumeItemListStart
-                \resumeItem{Launched Thonk \& Code to support beginner and intermediate students in the Bangladesh Olympiad in Informatics (BdOI).}
-            \resumeItemListEnd
-
-        \resumeSubheading
-            {Academic Team Member \& Tutor}{May 2022 -- August 2024}
-            {Gonitzoggo}{Bangladesh}
-            \resumeItemListStart
-                \resumeItem{Created Olympiad-level math problems and taught in Gonitzoggo's online courses and practice programs for national Olympiad students.}
-            \resumeItemListEnd
-    \resumeSubHeadingListEnd
+%         \resumeSubheading
+%             {Gonitzoggo}{August 2023 -- July 2025}
+%             {Engineering Team Member}{Bangladesh}
+%             \resumeItemListStart
+%                 \resumeItem{Identified a major security flaw and was recruited as a developer after reporting it.}
+%                 \resumeItem{Built key features and redesigned contest UI and logic for version 3, improving usability.}
+%             \resumeItemListEnd
+%   \resumeSubHeadingListEnd
 
 
 
-\end{document}
+% % ------------Research Publications--------------
+% \section{Research Publications}
+% \begin{itemize}[leftmargin=0.15in, label={$\vcenter{\hbox{\tiny$\bullet$}}$}]
+%     \small
+%     \item \textbf{S M A Nahian}, Joel Rarang, Wayne B. Hayes. ``Sampling Methods for Graphlet Estimation.'' \textit{PLOS ONE} (Under Review).
+%     \item Wayne B. Hayes, Kimia Yazdani, \textbf{S M A Nahian}, Ezra Alemu. ``The Unseen Connections: Link Prediction via Pattern Matching in Large Networks.'' \textit{Cell Press Patterns} (Under Review). \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5579862}{[SSRN]}
+% \end{itemize}
+
+% %-----------PROJECTS-----------
+% \section{Projects}
+%     \resumeSubHeadingListStart
+%         \resumeProjectHeading
+%             {\textbf{BeatVote} $|$ \emph{Python, Flask, MongoDB, Chrome Extension}}{September 2025}
+%             \resumeItemListStart
+%                 \resumeItem{Built a collaborative karaoke and party music room platform at HackMIT 2025 in a team of four.}
+%                 \resumeItem{Engineered a Flask + MongoDB stack with secure login, guest access, and real-time queue updates.}
+%             \resumeItemListEnd
+%         \vspace{-4mm}
+%         \resumeProjectHeading
+%             {\textbf{Chess Analyzer} $|$ \emph{Python, Chess}}{June 2025}
+%             \resumeItemListStart
+%                 \resumeItem{Built a tool that analyzes a player's games to detect recurring opening mistakes and generates targeted training positions for practice.}
+%             \resumeItemListEnd
+%         \vspace{-4mm}
+%         \resumeProjectHeading
+%             {\textbf{ssehC --- Chess Engine} $|$ \emph{C}}{September 2024}
+%             \resumeItemListStart
+%                 \resumeItem{Created a chess engine from scratch implementing minimax search with alpha-beta pruning; deployed as a Lichess bot achieving 2000+ rating.}
+%             \resumeItemListEnd
+%         \vspace{-4mm}
+%         \resumeProjectHeading
+%             {\textbf{Spotify Addon --- Synced Lyrics} $|$ \emph{Java}}{February 2024}
+%             \resumeItemListStart
+%                 \resumeItem{Extended an open-source Spotify lyrics widget with multilingual support via lrclib.net API; PR merged by original author.}
+%             \resumeItemListEnd
+%         \vspace{-4mm}
+%         \resumeProjectHeading
+%             {\textbf{CP Calendar} $|$ \emph{Python, Flask}}{February 2022}
+%             \resumeItemListStart
+%                 \resumeItem{Created a customizable online calendar that aggregates competitive programming contests from 120+ online judges, with filtering and .ics sync.}
+%             \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+
+% % -----------Extracurricular Activities (Academic/Olympiad)-----------
+% \section{Teaching \& Mentorship}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading
+%             {Problem Setter, Academic Team Member \& Mentor}{February 2022 -- November 2025}
+%             {Bangladesh Mathematical Olympiad (BdMO)}{Bangladesh}
+%             \resumeItemListStart
+%                 \resumeItem{Volunteer mentor for national and junior math Olympiad camps; conducted advanced math classes and discussion sessions.}
+%             \resumeItemListEnd
+
+%         \resumeSubheading
+%             {Problem Setter, Academic Team Member \& Mentor}{March 2022 -- May 2025}
+%             {Gonitkonya --- Bangladesh Girls' Mathematics Foundation}{Bangladesh}
+%             \resumeItemListStart
+%                 \resumeItem{Taught and mentored female Olympiad participants in national and EGMO-focused camps; trained the Bangladesh team for EGMO in 2022, 2023, and 2024.}
+%             \resumeItemListEnd
+
+%         \resumeSubheading
+%             {Founder}{August 2024 -- August 2025}
+%             {NEMOP --- Year Long Online Mathematics Training Program}{Bangladesh}
+%             \resumeItemListStart
+%                 \resumeItem{Founded NEMOP, inspired by India's OMC, to train top Bangladeshi students for the International Mathematical Olympiad (IMO).}
+%             \resumeItemListEnd
+
+%         \resumeSubheading
+%             {Co-Founder \& Mentor}{September 2024 -- March 2025}
+%             {Thonk \& Code}{Bangladesh}
+%             \resumeItemListStart
+%                 \resumeItem{Launched Thonk \& Code to support beginner and intermediate students in the Bangladesh Olympiad in Informatics (BdOI).}
+%             \resumeItemListEnd
+
+%         \resumeSubheading
+%             {Academic Team Member \& Tutor}{May 2022 -- August 2024}
+%             {Gonitzoggo}{Bangladesh}
+%             \resumeItemListStart
+%                 \resumeItem{Created Olympiad-level math problems and taught in Gonitzoggo's online courses and practice programs for national Olympiad students.}
+%             \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+
+
+% \end{document}
