@@ -3,9 +3,7 @@ name: Build and Publish CV PDFs
 on:
   push:
     paths:
-      - 'CV-short.tex'
-      - 'CV-medium.tex'
-      - 'CV-long.tex'
+      - '**.tex'
       - '.github/workflows/build-cv.yml'
   workflow_dispatch:
 
@@ -23,40 +21,33 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y texlive-latex-extra texlive-fonts-recommended texlive-latex-recommended texlive-science texlive-fonts-extra ghostscript
 
-      - name: Compile CV PDFs
+      - name: Compile CV PDF
         run: |
           set -e
-          for tex in CV-short.tex CV-medium.tex CV-long.tex; do
-            name="${tex%.tex}"
-            pdflatex -interaction=nonstopmode "$tex"
-            pdflatex -interaction=nonstopmode "$tex"
-          done
+          pdflatex -interaction=nonstopmode CV-short.tex
+          pdflatex -interaction=nonstopmode CV-short.tex # রেফারেন্স ঠিক করার জন্য ২য় বার রান
+
           mkdir -p docs
           mv CV-short.pdf docs/CV-short.pdf
-          mv CV-medium.pdf docs/CV-medium.pdf
-          mv CV-long.pdf docs/CV-long.pdf
 
-      - name: Optimize PDFs (compress)
+      - name: Optimize PDF (compress)
         run: |
-          for f in docs/*.pdf; do
+          if [ -f docs/CV-short.pdf ]; then
             gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dPDFSETTINGS=/printer \
                -dNOPAUSE -dQUIET -dBATCH \
-               -sOutputFile="${f%.pdf}-min.pdf" "$f" || true
-            if [ -f "${f%.pdf}-min.pdf" ]; then mv "${f%.pdf}-min.pdf" "$f"; fi
-          done
-
-      - name: Commit updated PDFs to docs
-        run: |
-          if [ -n "$(git status --porcelain docs)" ]; then
-            git config user.name "github-actions"
-            git config user.email "actions@github.com"
-            git add docs/
-            git commit -m "Automated build: update CV PDFs"
-            git push
+               -sOutputFile="docs/CV-short-min.pdf" docs/CV-short.pdf || true
+            if [ -f docs/CV-short-min.pdf ]; then mv docs/CV-short-min.pdf docs/CV-short.pdf; fi
           fi
+
+      - name: Commit updated PDF to docs
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add docs/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated build: update CV-short PDF" && git push)
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: cv-pdfs
-          path: docs/*.pdf
+          name: cv-pdf
+          path: docs/CV-short.pdf
