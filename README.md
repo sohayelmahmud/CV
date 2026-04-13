@@ -1,4 +1,4 @@
-# CV — S M A Nahian
+# CV — Sohayel Mahmud
 
 LaTeX source and compiled PDFs for my curriculum vitae.
 
