@@ -1,0 +1,23 @@
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+
+# PDFs everywhere except the docs/ output folder
+*.pdf
+!docs/*.pdf
+
+# Editor
+.DS_Store
+*.swp
+*.swo

@@ -1,0 +1,401 @@
+
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+  \item{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-6pt}
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-10pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape S M A Nahian} \\ \vspace{1pt}
+    500 Memorial Drive, Cambridge, MA 02139, USA \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +1 (857) 331-8436 ~ \href{mailto:nahian@mit.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{nahian@mit.edu}} ~ 
+    \href{https://www.linkedin.com/in/SMANahian/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/SMANahian}}  ~
+    \href{https://github.com/SMANahian}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/SMANahian}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Massachusetts Institute of Technology}{August 2025 -- May 2029}
+            {Bachelor of Science — Undeclared}{Massachusetts, USA}
+
+            	\textit{Activities: HackMIT; Member of the MIT A team in Collegiate Chess League (Fall 2025)}
+
+        % \vspace{3mm}    
+            	\textit{Relevant Courses:} Distributed Computer Systems Engineering (6.5840), Randomized Algorithms (6.5220), Computation Structures (6.1910), Fundamentals of Programming (6.1010), Intro to CS Programming in Python (6.100A), Intro Program in C \& Assembly (6.1903)
+    
+        \resumeSubheading
+            {Dhaka College}{February 2023 -- October 2024}
+            {Higher Secondary Certificate, Science (Grade: 5.00/5.00)}{Dhaka, Bangladesh}
+
+        \resumeSubheading
+            {Shamsul Hoque Khan School and College}{January 2017 -- November 2022}
+            {Secondary School Certificate, Science (Grade: 5.00/5.00)}{Dhaka, Bangladesh}
+
+        \resumeSubheading
+            {SDS Academy}{January 2011 -- December 2016}
+            {Primary Education Completion (Grade: 5.0/5.0)}{Shariatpur, Bangladesh}
+        
+    \resumeSubHeadingListEnd
+%-----------INVOLVEMENT---------------
+\section{Honors \& Awards}
+\begin{itemize}[leftmargin=0in, label={}]
+    \small
+    \item {\textbf{Iranian Geometry Olympiad (IGO)}: Silver Medal (Free Level, 2024, Country Rank \#1); Bronze (Advanced, 2023, Country \#1, World \#52); Bronze (Advanced, 2022, Country \#1, World \#21); Silver (Intermediate, 2021, Country \#2, World \#29); Silver (Intermediate, 2020, Country \#1, World \#20).}
+    \item {\textbf{International Mathematical Olympiad (IMO)}: Bronze Medals (2024 Country \#2 World \#252; 2023 Country \#1 World \#145); Honorable Mention (2022). Represented Bangladesh 3 consecutive years.}
+    \item {\textbf{Asia Pacific Mathematical Olympiad (APMO)}: Silver Medals (2022, 2023); Bronze Medal (2024); represented Bangladesh 3 consecutive years.}
+    \item {\textbf{Iranian Combinatorics Olympiad (ICO)}: Bronze Medal (Advanced Category, 2021, Country Rank \#1, World \#30).}
+    \item {\textbf{Bangladesh Junior Science Olympiad (BdJSO)}: 1st Place National Round (2021).}
+    \item {\textbf{Science Olympiad (National Science \& Technology Week)}: 1st Prize (2020); District Champion (2019, 2020).}
+    \item {\textbf{Asia Pacific Informatics Olympiad (APIO)}: National Finalist (2024) — Ranked 5th in Bangladesh, 210th worldwide.}
+    \item {\textbf{ICPC Asia Dhaka Regional} (2023): 6th Place overall as guest high school team (Team IOI1).}
+    \item {\textbf{Bangladesh Olympiad in Informatics (BdOI)}: Bronze Medals (2023 Ranked 4th nationally; 2024 Ranked 5th nationally).}
+    \item {\textbf{Father Timm Memorial Programming Contest (FTMPC)}: Bronze Medals (2023, 2024).}
+    \item {\textbf{USACO} Gold Division (Promoted January 2023).}
+    \item {\textbf{Champion of the Champions (BdMO)}: 2021–2024; \textbf{National Winner} (2016, 2017, 2019).}
+    \item {\textbf{STAR Scholar} – Search for Talented Ramanujans (2023) with $\$500$ prize for excellence in problem solving.}
+    \item {\textbf{William Lowell Putnam Mathematical Competition}: Ranked 231 (Top 5\%) in the 86th Putnam (2025).}
+    \item {\textbf{Arena FIDE Master (AFM)} title awarded October 2024 by FIDE.}
+    \item {\textbf{Master Rank at Codeforces}: Achieved Aug 2024 (Max Rating 2100+), top ~1\%.}
+    \item {\textbf{Merit-Based Govt. Scholarship} – SSC 2022 (Nov 2022) and PEC 2016 (Feb 2017), Talentpool category.}
+    \item {\textbf{3rd Place} – Astrophysics Contest (Gonitzoggo, Oct 2020).}
+\end{itemize}
+
+%-----------SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+        \textbf{Programming/Scripting Languages}{: Python, C++, C, Rust, JavaScript, PHP, Java} \\
+        \textbf{Technologies/Frameworks}{: Linux, GitHub, Flask, Verus, MongoDB} \\
+        % \textbf{Technical Skills}{: Web Development, Graph Theory, Algorithmic Problem, Research} \\
+        % \textbf{Soft Skills}{: Problem-Solving, Teaching, Teamwork} \\
+    }}
+\end{itemize}
+
+
+
+%-----------LANGUAGES-----------
+\section{Languages}
+\begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+                    	\textbf{Bengali}{: Native or bilingual proficiency} \\
+                    	\textbf{English}{: Professional working proficiency} \\
+                    	\textbf{Hindi}{: Elementary proficiency} \\
+    }}
+\end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Cybersecurity at MIT Sloan (CAMS)}{September 2025 -- Present}
+            {Undergraduate Research Assistant}{Massachusetts, USA}
+            \resumeItemListStart
+                \resumeItem{Developing graph-based models to analyze and minimize risk propagation in AI supply chains.}
+                \resumeItem{Designing optimization methods to identify the most critical components to harden, sign, or verify for maximum security impact.}
+            \resumeItemListEnd
+            
+        \resumeSubheading
+            {Beneficial AI Foundation}{September 2025 -- Present}
+            {Undergraduate Research Assistant}{Massachusetts, USA}
+            \resumeItemListStart
+                \resumeItem{Developing AI tools to accelerate and automate formal verification workflows.}
+                \resumeItem{Contributing to Dalek-Lite, a Rust-based fork of dalek-cryptography/curve25519-dalek, aimed at the formal verification of elliptic-curve cryptography using Verus. GitHub: \texttt{\href{https://github.com/Beneficial-AI-Foundation/dalek-lite}{Beneficial-AI-Foundation/dalek-lite}}}
+            \resumeItemListEnd
+        
+        \resumeSubheading
+            {Mercor}{July 2025 -- August 2025}
+            {Mathematics Expert (Olympiad) — Contract}{Remote}
+        
+        \resumeSubheading
+            {UC Irvine}{October 2023 -- August 2025}
+            {Research Collaborator — Graph Theory (Internship)}{Irvine, California, USA \textit{(Remote)}}
+            \resumeItemListStart
+                \resumeItem{Conducted research under Prof. Wayne Hayes focused on graph theory and network analysis.}
+                \resumeItem{Contributed to a tool used in biological and computational network research.}
+                \resumeItem{Worked on algorithm design and performance optimization.}
+            \resumeItemListEnd
+            
+        \resumeSubheading
+            {Gonitzoggo}{August 2023 -- July 2025}
+            {Internship}{Bangladesh, Remote}
+            \resumeSubSubheading{Engineering Team Member}{September 2024 -- July 2025}
+                \resumeItemListStart
+                    \resumeItem{Built key features and redesigned contest UI and logic for version 3, improving usability.}
+                \resumeItemListEnd
+            \resumeSubSubheading{Developer}{August 2023 -- September 2024}
+                \resumeItemListStart
+                    \resumeItem{Identified a major security flaw and was recruited as a developer after reporting it.}
+                    \resumeItem{Built key features, including author credit system for contests and profile picture cropping.}
+                    \resumeItem{Simplified contest page UI and button logic for improved usability.}
+                \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+% ------------Research--------------
+\section{Research}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{BLANT Project (Under Prof. Wayne Hayes, UCI)}}{October 2023 -- August 2025}
+            \resumeItemListStart
+                % \resumeItem{Invented a new structure for the pre-computed table, allowing BLANT to work up to graphlets of size k=10. Developed a novel method to allow BLANT to estimate the actual counts rather than only the graphlet's concentrations (ratio of the count). Improved the sampling methods of BLANT. Currently working on publishing a confidential sub-project of BLANT. Details at : \texttt{\href{https://github.com/waynebhayes/BLANT}{https://github.com/waynebhayes/BLANT}}}
+                \resumeItem{Developed a method to estimate absolute graphlet counts from relative concentrations using star-motifs}
+                \resumeItem{Derived normalization formulas for two existing sampling methods: NBE (Node-Based Expansion) and EBE (Edge-Based Expansion), making them usable in practice with reduced statistical noise}
+                \resumeItem{Improved the $\alpha$-computation algorithm in MCMC sampling, reducing runtime from hours to seconds for k=8}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+% -----------Publications--------------
+\section{Publications}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{The Unseen Connections: Link Prediction via Pattern Matching in Large Networks} $|$ \emph{Cell Press Patterns} (under review)}{October 9, 2025}
+            \resumeItemListStart
+                \resumeItem{Worked with Prof. Wayne Hayes to develop BLANT-Predict, a topology-based link prediction model using higher-order graphlet structures that outperforms 13 state-of-the-art methods on large real-world networks.}
+                \resumeItem{Introduced a novel ``time-travel'' evaluation framework for realistic forecasting.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{dalek-lite} $|$ \emph{Rust, Verus}}{September 2025 -- January 2026}
+            \resumeItemListStart
+                \resumeItem{Contributing to a formally verifiable Rust fork of curve25519-dalek by specifying and verifying scalar/field operations, enforcing limb-boundedness and modular invariants, and ensuring constant-time behavior for end-to-end ECC verification. GitHub: \texttt{\href{https://github.com/Beneficial-AI-Foundation/dalek-lite}{Beneficial-AI-Foundation/dalek-lite}}}
+            \resumeItemListEnd
+        
+        \vspace{-4mm}
+        \resumeProjectHeading
+            {\textbf{BeatVote} $|$ \emph{Python, Flask, MongoDB, Chrome/Brave Ext}}{September 2025}
+            \resumeItemListStart
+                \resumeItem{Built a collaborative karaoke/party music room platform at HackMIT 2025 with secure login/guest access and real-time queue updates to keep every room in sync. GitHub: \texttt{\href{https://github.com/SMANahian/BeatVote}{SMANahian/BeatVote}}}
+                \resumeItem{Implemented a YouTube Data API proxy and a companion browser extension that pins the host room, drives playback in dedicated tabs, and adds an in-page player toggle.}
+            \resumeItemListEnd
+
+        \vspace{-4mm}
+        \resumeProjectHeading
+            {\textbf{BLANT: Basic Local Alignment of Network Topology} $|$ \emph{C, C++, Python}}{October 2023 -- August 2025}
+            \resumeItemListStart
+                \resumeItem{Improved graphlet-sampling methods and performance under Prof. Wayne Hayes; details in Research. GitHub: \texttt{\href{https://github.com/waynebhayes/BLANT}{waynebhayes/BLANT}}}
+            \resumeItemListEnd
+
+        \vspace{-4mm}
+        \resumeProjectHeading
+            {\textbf{Chess Analyzer} $|$ \emph{Python, Chess}}{June 2025}
+            \resumeItemListStart
+                \resumeItem{Analyzes a player's PGN game history to detect recurring opening mistakes and automatically generates replayable practice positions for those errors. GitHub: \texttt{\href{https://github.com/SMANahian/chess-analyzer}{SMANahian/chess-analyzer}}}
+            \resumeItemListEnd
+        
+        \vspace{-4mm}
+        \resumeProjectHeading
+            {\textbf{ssehC} $|$ \emph{C, Chess}}{September 2024 -- April 2025}
+            \resumeItemListStart
+                \resumeItem{Built a chess engine from scratch in C with move generation, evaluation, and minimax with alpha-beta; deployed as a Lichess bot that achieved a 2000+ rating. GitHub: \texttt{\href{https://github.com/SMANahian/ssehC}{SMANahian/ssehC}}}
+            \resumeItemListEnd
+        \vspace{-4mm}
+        \resumeProjectHeading
+            {\textbf{Spotify Addon (Synced Lyrics for Spotify)} $|$ \emph{Java}}{February 2024}
+            \resumeItemListStart
+                \resumeItem{Expanded a Java-based lyrics widget by integrating the lrclib.net synced-lyrics API, formatting output for the app's UI/timing engine, and contributing changes upstream. GitHub: \texttt{\href{https://github.com/LabyStudio/spotify-addon}{LabyStudio/spotify-addon}}}
+            \resumeItemListEnd
+
+        \vspace{-4mm}
+        \resumeProjectHeading
+            {\textbf{CP Calendar} $|$ \emph{Python, Flask}}{February 2022}
+            \resumeItemListStart
+                \resumeItem{Customizable calendar that aggregates 120+ competitive programming contest feeds via Clist API; supports keyword/platform filters and personal .ics generation for Google Calendar sync. Live: \texttt{\href{https://cpcalendar.pythonanywhere.com/}{cpcalendar.pythonanywhere.com}} \; GitHub: \texttt{\href{https://github.com/SMANahian/cp-calendar}{SMANahian/cp-calendar}}}
+            \resumeItemListEnd
+
+        % \vspace{-3mm}
+    \resumeSubHeadingListEnd
+
+
+% -----------Activities
+\section{Extracurricular Activities}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Bangladesh Mathematical Olympiad (BdMO)}{February 2022 -- November 2025}
+            {Academic Team Member \& Mentor}{Bangladesh}
+            \resumeItemListStart
+                \resumeItem{Volunteer mentor for national and junior math Olympiad camps.}
+                \resumeItem{Conducted advanced classes and discussion sessions; mentored students in algebra, geometry, and combinatorics.}
+                \resumeItem{Prepared problem sets and handwritten lecture notes; coached students who qualified for national teams and higher rounds.}
+            \resumeItemListEnd
+
+        \resumeSubheading
+            {Gonitkonya — Bangladesh Girls' Mathematics Foundation}{March 2022 -- May 2025}
+            {Academic Team Member}{Bangladesh}
+            \resumeItemListStart
+                \resumeItem{Taught and mentored female Olympiad participants in national and EGMO-focused camps.}
+                \resumeItem{Trained Bangladesh's EGMO teams in 2022, 2023, and 2024; conducted live sessions and mock tests.}
+                \resumeItem{Authored 10+ original problems; worked to increase female representation in high-level math competitions.}
+            \resumeItemListEnd
+
+        \resumeSubheading
+            {Thonk \& Code}{September 2024 -- March 2025}
+            {Co-Founder \& Mentor}{Bangladesh}
+            \resumeItemListStart
+                \resumeItem{Launched an initiative to support beginner and intermediate students in the Bangladesh Olympiad in Informatics (BdOI).}
+                \resumeItem{Created structured curriculum and content; promoted a mentorship culture within the BdOI community.}
+            \resumeItemListEnd
+
+        \resumeSubheading
+            {NEMOP}{August 2024 -- August 2025}
+            {Founder}{Bangladesh}
+            \resumeItemListStart
+                \resumeItem{Year-long online mathematics training program inspired by India's OMC to prepare Bangladeshi students for IMO.}
+                \resumeItem{Designed weekly problem sets and biweekly exams; taught advanced topics and Olympiad strategies.}
+            \resumeItemListEnd
+
+        \resumeSubheading
+            {Somantoral Magazine}{September 2023 -- December 2024}
+            {Web Developer \& Content Writer}{Bangladesh}
+            \resumeItemListStart
+                \resumeItem{Contributed articles and web features to a student-run math magazine focused on accessible advanced topics.}
+            \resumeItemListEnd
+
+        \resumeSubheading
+            {Gonitzoggo}{May 2022 -- August 2024}
+            {Academic Team Member \& Tutor}{Bangladesh}
+            \resumeItemListStart
+                \resumeItem{Created Olympiad-level problems and taught in online courses and practice programs for national Olympiad students.}
+            \resumeItemListEnd
+
+        \resumeSubheading
+            {Shamsul Hoque Khan School \& College Scout Group}{January 2017 -- January 2018}
+            {Scout}{Dhaka, Bangladesh}
+            \resumeItemListStart
+                \resumeItem{Participated in school scout camps and community volunteering; developed teamwork and leadership skills.}
+            \resumeItemListEnd    
+    \resumeSubHeadingListEnd    
+
+
+
+\end{document}
